@@ -40,7 +40,7 @@ export class App extends Component {
         })
 
       } else {
-        this.setState({ currentUser: userAuth })
+        this.setState({  currentUser: userAuth })
       }
 
     })

@@ -9,7 +9,7 @@ import CartItem from '../cart-item/cart-item'
 const CartDropdown = ({cartItems}) => (
     <div className='cart-dropdown'>
         <div className="cart-items">
-            {cartItems.map(cartItem => (<CartItem  item={cartItem}/>))}
+            {cartItems.map(cartItem => (<CartItem  key={cartItem.id} item={cartItem}/>))}
         </div>
         <CustomButton>Go to checkout</CustomButton>
     </div>

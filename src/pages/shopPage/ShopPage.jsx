@@ -1,6 +1,4 @@
 import React from 'react'
-import PreviewCollection from '../../components/previewCollection/PreviewCollection'
-
 
 import CollectionOverview from '../../components/collection-overview/collection-overview'
 

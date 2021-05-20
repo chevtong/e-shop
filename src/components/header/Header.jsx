@@ -15,13 +15,14 @@ import { selectCurrentUser } from '../../redux/user/user.selector'
 function Header({ currentUser, hidden }) {
     return (
         <div className='header'>
+
             <Link className='logo-container' to='/'>
                 <Logo className='logo' />
             </Link>
+            
             <div className="options">
-                <Link className='option' to='/shop'>SHOP</Link>
 
-                <Link className='option' to='/contact'>CONTACT</Link>
+                <Link className='option' to='/shop'>SHOP</Link>
 
                 {currentUser ? (
                     <div className='option' onClick={() => auth.signOut()}>
